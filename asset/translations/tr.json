@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "Anasayfa"
+  },
+  "general": {
+    "button": {
+      "save": "Kaydet",
+      "delete": "Sil"
+    }
+  },
+  "login": {
+    "loginTitle": "Kayit Ol"
+  }
+}

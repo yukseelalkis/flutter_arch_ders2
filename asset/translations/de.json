@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "Startseite"
+  },
+  "general": {
+    "button": {
+      "save": "Speichern",
+      "delete": "Löschen"
+    }
+  },
+  "login": {
+    "loginTitle": "Anmelden"
+  }
+}

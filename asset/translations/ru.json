@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "Главная страница"
+  },
+  "general": {
+    "button": {
+      "save": "Сохранить",
+      "delete": "Удалить"
+    }
+  },
+  "login": {
+    "loginTitle": "Войти"
+  }
+}
