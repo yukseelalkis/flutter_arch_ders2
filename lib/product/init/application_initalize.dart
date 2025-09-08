@@ -32,7 +32,6 @@ final class ApplicationInitialize {
     EasyLocalization.logger.enableLevels = [LevelMessages.error];
     await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
-    ///TODO: Splash
     await DeviceUtility.instance.initPackageInfo();
     // Firebase initiliza islemleri de buraya gellecek
 
@@ -43,7 +42,6 @@ final class ApplicationInitialize {
 
     FlutterError.onError = (details) {
       // bunu bir katman olarak yazacak hoca
-      ///TODO:  ADD CUSTOM  LOGGER
       Logger().e(details.exceptionAsString());
     };
   }

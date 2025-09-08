@@ -1,8 +1,7 @@
-
-
 import 'package:arch_v2/feature/view/home_view.dart';
 import 'package:arch_v2/product/init/application_initalize.dart';
 import 'package:arch_v2/product/init/product_localization.dart';
+import 'package:arch_v2/product/init/theme/custom_light_theme.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -30,17 +29,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        // Uygulamanın kullanacağı yerelleştirme delegelerini belirtir.
-        // Çeviri, tarih/sayı formatlama gibi işlemler için gerekli altyapıyı sağlar.
-        localizationsDelegates: context.localizationDelegates,
+      // Uygulamanın kullanacağı yerelleştirme delegelerini belirtir.
+      // Çeviri, tarih/sayı formatlama gibi işlemler için gerekli altyapıyı sağlar.
+      localizationsDelegates: context.localizationDelegates,
 
-        // Uygulamanın desteklediği dillerin listesidir.
-        // Bu liste genellikle enum ya da sabitler ile tanımlanır (örneğin: Locales.tr, Locales.en).
-        supportedLocales: context.supportedLocales,
+      // Uygulamanın desteklediği dillerin listesidir.
+      // Bu liste genellikle enum ya da sabitler ile tanımlanır (örneğin: Locales.tr, Locales.en).
+      supportedLocales: context.supportedLocales,
 
-        // Uygulamanın aktif olarak kullanacağı dili belirtir.
-        // Sistem diline göre ya da kullanıcı seçimine göre değişebilir.
-        locale: context.locale,
-        home: HomeView());
+      // Uygulamanın aktif olarak kullanacağı dili belirtir.
+      // Sistem diline göre ya da kullanıcı seçimine göre değişebilir.
+      locale: context.locale,
+
+      // theme
+      theme: CustomLightTheme().themeData,
+
+      home: HomeView(),
+    );
   }
 }
