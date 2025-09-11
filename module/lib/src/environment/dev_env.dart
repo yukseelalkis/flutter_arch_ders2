@@ -1,9 +1,9 @@
 import 'package:envied/envied.dart';
-import 'package:arch_v2/product/init/config/app_configuration.dart';
+import 'package:module/src/environment/app_configuration.dart';
 
 part 'dev_env.g.dart';
 
-@Envied(obfuscate: true, path: 'asset/env/.dev.env')
+@Envied(obfuscate: true, path: 'assets/env/.dev.env')
 final class DevEnv implements AppConfiguration {
   //  base url
   @EnviedField(varName: 'BASE_URL')

@@ -12,12 +12,14 @@ final class CustomLightTheme implements CustomTheme {
   ThemeData get themeData => ThemeData(
     useMaterial3: true,
     colorScheme: CustomColorTheme.lightScheme(),
+
     /// font kullanmak Istersem(),
     fontFamily: GoogleFonts.roboto().fontFamily,
     floatingActionButtonTheme: floatingActionButtonThemeData,
     appBarTheme: appBarTheme,
   );
 
+  /// burada kisilestirmeler de Bulanabilirim
   @override
   final FloatingActionButtonThemeData floatingActionButtonThemeData =
       FloatingActionButtonThemeData();

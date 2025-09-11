@@ -40,13 +40,9 @@ dependencies:
 #   widgets:
 #     path: module/widgets
 
-#   # Modules
-#   gen:
-#     path: module/gen
-#   common:
-#     path: module/common
-#   core:
-#     path: module/core
+# Modules
+gen:
+  path: module/gen
 
 dev_dependencies:
   integration_test:
@@ -62,7 +58,7 @@ dev_dependencies:
   bloc_test: ^9.1.4
   envied_generator: ^0.5.4+1
   analyzer: ^6.4.1
-  
+
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
@@ -76,4 +72,3 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - asset/translations/
-    - asset/env/
