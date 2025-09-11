@@ -1,5 +1,4 @@
 
-
 final class AppEnvironment {
   static late final AppConfiguration _config;
 

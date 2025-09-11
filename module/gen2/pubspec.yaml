@@ -1,0 +1,39 @@
+name: gen2
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  json_annotation: ^4.9.0
+  flutter_svg: ^2.0.16
+  lottie: ^3.1.2
+  envied: ^1.2.1
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.12
+  json_serializable: ^6.9.5
+  envied_generator: ^1.2.1
+  flutter_gen_runner: ^5.11.0
+
+flutter_gen:
+  output: lib/src/asset/
+  integrations:
+    lottie: true
+    flutter_svg: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/color/
+    - assets/icons/
+    - assets/images/
+    - assets/lottie/

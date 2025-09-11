@@ -1,13 +1,16 @@
 import 'dart:async';
 
 import 'package:arch_v2/product/init/config/app_enviroment.dart';
-import 'package:arch_v2/product/init/config/dev_env.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:easy_logger/easy_logger.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:kartal/kartal.dart';
 import 'package:logger/logger.dart';
+
+
+
+
 
 @immutable
 final class ApplicationInitialize {
