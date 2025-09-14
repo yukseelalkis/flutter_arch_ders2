@@ -1,3 +1,80 @@
+# # name: arch_v2
+# description: "A new Flutter project."
+# publish_to: "none"
+
+# version: 1.0.0+1
+
+# environment:
+#   sdk: ^3.9.0
+
+# dependencies:
+#   flutter:
+#     sdk: flutter
+
+#   cupertino_icons: ^1.0.2
+
+#   #Core
+#   equatable: ^2.0.5
+#   get_it: ^8.0.0
+
+#   #Network Dependencies
+#   vexana: ^5.0.1
+
+#   #State
+#   flutter_bloc: ^8.1.3
+
+#   # Config
+#   easy_localization: ^3.0.3
+
+#   #Utility
+#   easy_logger: ^0.0.2
+#   logger: ^2.0.2+1
+#   kartal: ^4.1.0
+#   google_fonts: ^6.1.0
+#   envied: ^0.5.4+1
+
+#   #Navigation
+#   auto_route: ^9.2.2
+
+#   # #buradaki projenin icindeki localdeki paketleri kullanmamiz icin gerekli kisimlar
+#   #   widgets:
+#   #     path: module/widgets
+
+# gen2:
+#   path: module/gen2
+
+# gen:
+#   path: module/gen
+
+# dev_dependencies:
+#   integration_test:
+#     sdk: flutter
+#   flutter_test:
+#     sdk: flutter
+#   very_good_analysis: ^6.0.0
+#   flutter_launcher_icons: ^0.14.1
+#   auto_route_generator: ^9.0.0
+#   build_runner: ^2.4.6
+#   device_preview: ^1.1.0
+#   mockito: ^5.4.2
+#   bloc_test: ^9.1.4
+#   envied_generator: ^0.5.4+1
+#   analyzer: ^6.4.1
+
+# flutter_launcher_icons:
+#   android: "launcher_icon"
+#   ios: true
+#   image_path: "assets/app/app_icon.png"
+#   min_sdk_android: 21 # android min sdk min:16, default 21
+#   remove_alpha_ios: true
+
+# flutter:
+#   uses-material-design: true
+
+#   # To add assets to your application, add an assets section, like this:
+#   assets:
+#     - asset/translations/
+
 name: arch_v2
 description: "A new Flutter project."
 publish_to: "none"
@@ -13,35 +90,33 @@ dependencies:
 
   cupertino_icons: ^1.0.2
 
-  #Core
+  # Core
   equatable: ^2.0.5
   get_it: ^8.0.0
 
-  #Network Dependencies
+  # Network Dependencies
   vexana: ^5.0.1
 
-  #State
+  # State
   flutter_bloc: ^8.1.3
 
   # Config
   easy_localization: ^3.0.3
 
-  #Utility
+  # Utility
   easy_logger: ^0.0.2
   logger: ^2.0.2+1
   kartal: ^4.1.0
   google_fonts: ^6.1.0
-  envied: ^0.5.4+1
 
-  #Navigation
+  # Navigation
   auto_route: ^9.2.2
 
-  # #buradaki projenin icindeki localdeki paketleri kullanmamiz icin gerekli kisimlar
-  #   widgets:
-  #     path: module/widgets
-
-gen2:
-  path: module/gen2
+  # Lokal paketler (BUNLAR dependencies altında olmalı)
+  gen2:
+    path: module/gen2
+  gen:
+    path: module/gen
 
 dev_dependencies:
   integration_test:
@@ -55,19 +130,16 @@ dev_dependencies:
   device_preview: ^1.1.0
   mockito: ^5.4.2
   bloc_test: ^9.1.4
-  envied_generator: ^0.5.4+1
   analyzer: ^6.4.1
 
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/app/app_icon.png"
+  image_path: "asset/app/app_icon.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
   remove_alpha_ios: true
 
 flutter:
   uses-material-design: true
-
-  # To add assets to your application, add an assets section, like this:
   assets:
-    - asset/translations/
+    - asset/translations/ # <-- 'asset' değil 'assets'

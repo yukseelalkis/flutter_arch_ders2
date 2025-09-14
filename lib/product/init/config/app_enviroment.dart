@@ -1,3 +1,4 @@
+import 'package:gen2/gen2.dart';
 
 final class AppEnvironment {
   static late final AppConfiguration _config;
