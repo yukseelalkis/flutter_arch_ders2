@@ -1,12 +1,15 @@
 import 'package:arch_v2/product/init/config/app_enviroment.dart';
 import 'package:arch_v2/product/init/language/locale_keys.g.dart';
 import 'package:arch_v2/product/init/product_localization.dart';
+import 'package:arch_v2/product/navigation/app_route.dart';
 import 'package:arch_v2/product/utility/constant/enum/locales.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:gen2/gen2.dart';
 
-class HomeView extends StatefulWidget {
+@RoutePage()
+final class HomeView extends StatefulWidget {
   const HomeView({super.key});
 
   @override
@@ -35,10 +38,14 @@ class _HomeViewState extends State<HomeView> {
             onPressed: () {
               ProductLocalization.updateLanguage(
                 context: context,
-                value: Locales.tr,
+                value: Locales.en,
               );
             },
             child: const Text(LocaleKeys.general_button_save).tr(),
+          ),
+          ElevatedButton(
+            onPressed: () => context.pushRoute(HomeDetailRoute(id: '2222')),
+            child: Text(LocaleKeys.general_button_detail.tr()),
           ),
         ],
       ),

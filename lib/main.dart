@@ -1,7 +1,7 @@
-import 'package:arch_v2/feature/view/home_view.dart';
 import 'package:arch_v2/product/init/application_initalize.dart';
 import 'package:arch_v2/product/init/product_localization.dart';
 import 'package:arch_v2/product/init/theme/custom_light_theme.dart';
+import 'package:arch_v2/product/navigation/app_route.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -23,12 +23,13 @@ Future<void> main() async {
   runApp(ProductLocalization(child: const MyApp()));
 }
 
-class MyApp extends StatelessWidget {
+final class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
+  static final _appRouter = AppRouter();
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: _appRouter.config(),
       // Uygulamanın kullanacağı yerelleştirme delegelerini belirtir.
       // Çeviri, tarih/sayı formatlama gibi işlemler için gerekli altyapıyı sağlar.
       localizationsDelegates: context.localizationDelegates,
@@ -43,8 +44,6 @@ class MyApp extends StatelessWidget {
 
       // theme
       theme: CustomLightTheme().themeData,
-
-      home: HomeView(),
     );
   }
 }

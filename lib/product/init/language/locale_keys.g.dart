@@ -7,6 +7,7 @@ abstract class  LocaleKeys {
   static const home = 'home';
   static const general_button_save = 'general.button.save';
   static const general_button_delete = 'general.button.delete';
+  static const general_button_detail = 'general.button.detail';
   static const general_button = 'general.button';
   static const general = 'general';
   static const login_loginTitle = 'login.loginTitle';

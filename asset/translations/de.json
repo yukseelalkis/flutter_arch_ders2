@@ -5,7 +5,8 @@
   "general": {
     "button": {
       "save": "Speichern",
-      "delete": "Löschen"
+      "delete": "Löschen",
+      "detail": "Detailseite"
     }
   },
   "login": {
